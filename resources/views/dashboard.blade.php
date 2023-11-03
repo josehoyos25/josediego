@@ -14,7 +14,7 @@
             </div >
 
             <div class="md:w-1/12 lg:w-6/12 px-5 ">
-            
+            <p>{{ $user->username }}</p>
                 <p class="font-bold uppercase">{{ $user->username}}</p>
 {{--                 <p class="font-bold uppercase">{{ auth()->user()->username }}</p> --}} 
 
