@@ -19,6 +19,15 @@ class PostController extends Controller
     }
     public function create(){
         //dd("Creando el primer post");
-        return view('post.controller')
+        return view('post.controller');
+    }
+}
+class ImagenController extends Controller
+{
+    public function store(Request $request){
+        //$input = $request->all();
+        $imagen = $request->file('file');
+
+        return response()->json(['imagen' => $imagen->extencion()]);
     }
 }
